@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-void input_name(char a[100])
+void input_name(char a)
 {
     char str[10];
     printf("enter the name of a Camel: ");
