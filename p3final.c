@@ -8,23 +8,23 @@ struct camel
 
 {
 
-float radius, height, length, weight;
+    float radius, height, length, weight;
 
 };
 
-typedef struct camel Camel;
+    typedef struct camel Camel;
 
 Camel input()
 
 {
 
-Camel c;
+    Camel c;
 
-printf("enter the radius, height and length of camel:");
+    printf("enter the radius, height and length of camel:");
 
-scanf("%f%f%f", &c.radius,&c.height,&c.length);
+    scanf("%f%f%f", &c.radius,&c.height,&c.length);
 
-return c;
+    return c;
 
 }
 
@@ -32,9 +32,9 @@ float find_weight(Camel c)
 
 {
 
-c.weight = (PI * (c.radius*c.radius*c.radius) * sqrt(c.height * c.length));
+    c.weight = (PI * (c.radius*c.radius*c.radius) * sqrt(c.height * c.length));
 
-return c.weight;
+    return c.weight;
 
 }
 
@@ -42,7 +42,7 @@ void output(Camel c, float w)
 
 {
 
-printf("weight of the camel given height(%f), length(%f) and stomach radius(%f) is = %f",c.height,c.length,c.radius,w);
+    printf("weight of the camel given height(%f), length(%f) and stomach radius(%f) is = %f",c.height,c.length,c.radius,w);
 
 }
 
@@ -50,15 +50,15 @@ int main()
 
 {
 
-Camel c;
+      Camel c;
 
-float w;
+      float w;
 
-c = input();
+      c = input();
 
-w = find_weight(c);
+      w = find_weight(c);
 
-output(c,w);
+      output(c,w);
 
 }
 
@@ -74,7 +74,7 @@ struct camel
 
 {
 
-float radius, height, length, weight;
+  float radius, height, length, weight;
 
 };
 
@@ -84,13 +84,13 @@ Camel input()
 
 {
 
-Camel c;
+    Camel c;
 
-printf("enter the radius, height and length of camel:");
+    printf("enter the radius, height and length of camel:");
 
-scanf("%f%f%f", &c.radius,&c.height,&c.length);
+    scanf("%f%f%f", &c.radius,&c.height,&c.length);
 
-return c;
+    return c;
 
 }
 
@@ -98,7 +98,7 @@ void find_weight(Camel *c)
 
 {
 
-c->weight = (PI * (c->radius*c->radius*c->radius) * sqrt(c->height * c->length));
+    c->weight = (PI * (c->radius*c->radius*c->radius) * sqrt(c->height * c->length));
 
 //return c.weight;
 
@@ -108,7 +108,7 @@ void output(Camel c)
 
 {
 
-printf("weight of the camel given height(%f), length(%f) and stomach radius(%f) is = %f",c.height,c.length,c.radius,c.weight);
+    printf("weight of the camel given height(%f), length(%f) and stomach radius(%f) is = %f",c.height,c.length,c.radius,c.weight);
 
 }
 
@@ -116,13 +116,13 @@ int main()
 
 {
 
-Camel c;
+    Camel c;
 
-float w;
+    float w;
 
-c = input();
+    c = input();
 
-find_weight(&c);
+    find_weight(&c);
 
-output(c);
+    output(c);
 }
